@@ -1,0 +1,28 @@
+{
+  "user_apis": {
+    "create_user": {
+      "payload": {"name": "morpheus", "job": "leader"},
+      "expected_status": 201
+    },
+    "update_user_put": {
+      "user_id": 2,
+      "payload": {"name": "morpheus", "job": "zion resident"},
+      "expected_status": 200
+    },
+    "update_user_patch": {
+      "user_id": 2,
+      "payload": {"job": "zion resident"},
+      "expected_status": 200
+    },
+    "delete_user": {
+      "user_id": 2,
+      "expected_status": 204
+    },
+    "delayed_get_users": {
+      "delay_seconds": 2,
+      "max_response_seconds": 20,
+      "expected_status": 200,
+      "expected": {"page": 1, "per_page": 6, "total": 12, "total_pages": 2}
+    }
+  }
+}
