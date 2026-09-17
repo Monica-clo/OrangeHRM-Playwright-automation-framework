@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "DELETE",
+    "url": "https://reqres.in/api/users/628",
+    "body": null
+  },
+  "response": {
+    "status": 204,
+    "elapsed_ms": 130,
+    "body": ""
+  }
+}

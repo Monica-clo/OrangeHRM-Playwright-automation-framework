@@ -1,0 +1,33 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "https://reqres.in/api/users",
+    "body": {
+      "name": "Monica N",
+      "job": "QA Engineer"
+    }
+  },
+  "response": {
+    "status": 201,
+    "elapsed_ms": 247,
+    "body": {
+      "name": "Monica N",
+      "job": "QA Engineer",
+      "id": "971",
+      "createdAt": "2026-09-17T15:20:15.124Z",
+      "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+          "label": "See example app",
+          "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+INFO     orangehrm.screen_recorder:screen_recorder.py:74 Screen recording ON for 'test_add_employee_with_profile_photo[firefox-contract_software_engineer_no_login]' -> /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/videos/test_add_employee_with_profile_photo_firefox-contract_software_engineer_no_login.webm
+INFO     orangehrm.LoginPage:base_page.py:32 Navigate to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+INFO     orangehrm.LoginPage:base_page.py:73 Type: Username = 'Admin'
+INFO     orangehrm.LoginPage:base_page.py:73 Type: Password = ******
+INFO     orangehrm.LoginPage:base_page.py:68 Click: Login button
+INFO     orangehrm.DashboardPage:dashboard_page.py:24 Logged in as 'manda user'
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 1. Logged in - Dashboard is visible ==========
+INFO     orangehrm.DashboardPage:dashboard_page.py:24 Logged in as 'manda user'
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 2. Open PIM > Add Employee ==========
+INFO     orangehrm.DashboardPage:base_page.py:68 Click: Side menu 'PIM'
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Top navigation tab 'Add Employee'
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 3. Enter name 'Rahul Verma' and Employee Id SE34996952 ==========
+INFO     orangehrm.AddEmployeePage:base_page.py:73 Type: First Name = 'Rahul'
+INFO     orangehrm.AddEmployeePage:base_page.py:73 Type: Middle Name = 'Kumar'
+INFO     orangehrm.AddEmployeePage:base_page.py:73 Type: Last Name = 'Verma'
+INFO     orangehrm.AddEmployeePage:base_page.py:73 Type: Employee Id = 'SE34996952'
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 4. Click '+' and add profile photo 'employee_photo.png' ==========
+INFO     orangehrm.AddEmployeePage:add_employee_page.py:70 Add profile picture: /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/test_data/images/employee_photo.png
+INFO     orangehrm.AddEmployeePage:base_page.py:68 Click: Add profile picture (+) button
+INFO     orangehrm.AddEmployeePage:add_employee_page.py:83 Profile picture added successfully: employee_photo.png
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 6. Click Save - expect 'Successfully Saved' ==========
+INFO     orangehrm.AddEmployeePage:base_page.py:68 Click: Save button
+INFO     orangehrm.AddEmployeePage:base_page.py:128 Waiting for toast: Successfully Saved
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 7. Verify the saved employee and the profile photo ==========
+INFO     orangehrm.test.add_employee_with_photo:test_add_employee_with_photo.py:60 Photo 'employee_photo.png' (2500x2500) is shown as 2500x2500
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 8. Verify employee SE34996952 is listed in Employee List ==========
+INFO     orangehrm.PersonalDetailsPage:base_page.py:68 Click: Top navigation tab 'Employee List'
+INFO     orangehrm.EmployeeListPage:base_page.py:73 Type: Employee Id (search) = 'SE34996952'
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Search button
+INFO     orangehrm.EmployeeListPage:employee_list_page.py:121 Verified table row: {'Id': 'SE34996952', 'First (& Middle) Name': 'Rahul Kumar', 'Last Name': 'Verma', 'Job Title': '', 'Employment Status': '', 'Sub Unit': '', 'Supervisor': '', 'Actions': ''}
+INFO     orangehrm.test.add_employee_with_photo:test_add_employee_with_photo.py:68 Screen recording: /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/videos/test_add_employee_with_profile_photo_firefox-contract_software_engineer_no_login.webm
+INFO     orangehrm.EmployeeListPage:base_page.py:32 Navigate to https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList
+INFO     orangehrm.EmployeeListPage:base_page.py:73 Type: Employee Id (search) = 'SE34996952'
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Search button
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Delete (trash) icon of employee 'SE34996952'
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Yes, Delete button
+INFO     orangehrm.EmployeeListPage:base_page.py:128 Waiting for toast: Successfully Deleted
+INFO     orangehrm.conftest:conftest.py:269 Deleted test employee SE34996952
+INFO     orangehrm.conftest:conftest.py:209 UI screen recording saved: /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/videos/test_add_employee_with_profile_photo_firefox-contract_software_engineer_no_login.webm
