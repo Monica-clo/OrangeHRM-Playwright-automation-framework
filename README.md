@@ -66,7 +66,7 @@ orangehrm-playwright-automation/
 ├── utils/                               # data models, data reader, logger, steps, image helper,
 │                                        # screen_recorder.py (video naming + on-screen step captions)
 ├── conftest.py                          # fixtures (browser context, video, trace, ReqRes, cleanup) + report hooks
-├── pytest.ini                           # markers, HTML/Allure/JUnit output
+├── pytest.ini                           # markers, HTML
 ├── requirements.txt
 └── run_tests.bat / run_tests.sh
 ```
@@ -171,12 +171,10 @@ python -m pytest -m "ui or hybrid" --browser firefox -n 2 --headed
 | Artifact | Location |
 |---|---|
 | HTML report, with the video and failure screenshot embedded and the API request/response logs | `reports/html/report.html` |
-| Allure results (UI steps plus API request/response attachments) | `reports/allure-results`. View with `allure serve reports/allure-results`. |
 | **UI screen recordings** (one per test, with step captions) | `reports/videos/<test name>.webm`, e.g. `test_add_employee_with_profile_photo_chromium-fulltime_qa_engineer_with_login.webm`. The recordings are also embedded in the HTML report and attached to Allure. |
 | Failure screenshots, plus avatar screenshots taken before and after the photo change | `reports/screenshots/` |
 | Playwright traces (on failure) | `reports/traces/*.zip`. Open with `python -m playwright show-trace <zip>`. |
 | Execution log | `reports/logs/test_run.log` |
-| JUnit XML | `reports/junit/results.xml` |
 
 To open the HTML report on Windows, run `start reports\html\report.html`.
 
