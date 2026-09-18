@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "PATCH",
+    "url": "https://reqres.in/api/users/654",
+    "body": {
+      "job": "Full-Time Contract"
+    }
+  },
+  "response": {
+    "status": 200,
+    "elapsed_ms": 106,
+    "body": {
+      "job": "Full-Time Contract",
+      "updatedAt": "2026-09-18T12:05:33.383Z",
+      "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_b",
+        "message": "This is a read-only demo endpoint. Sign up to create your own collections with full CRUD and auth.",
+        "cta": {
+          "label": "Get started",
+          "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "legacy_success"
+      }
+    }
+  }
+}

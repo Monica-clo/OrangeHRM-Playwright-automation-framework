@@ -1,0 +1,80 @@
+INFO     orangehrm.screen_recorder:screen_recorder.py:74 Screen recording ON for 'test_employee_lifecycle_ui_and_api[chromium-contract_software_engineer_no_login]' -> /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/videos/test_employee_lifecycle_ui_and_api_chromium-contract_software_engineer_no_login.webm
+INFO     orangehrm.LoginPage:base_page.py:32 Navigate to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+INFO     orangehrm.LoginPage:base_page.py:73 Type: Username = 'Admin'
+INFO     orangehrm.LoginPage:base_page.py:73 Type: Password = ******
+INFO     orangehrm.LoginPage:base_page.py:68 Click: Login button
+INFO     orangehrm.DashboardPage:dashboard_page.py:24 Logged in as 'manda user'
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 1. Login - dashboard is visible ==========
+INFO     orangehrm.DashboardPage:dashboard_page.py:24 Logged in as 'manda user'
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 2a. PIM > Add Employee 'Rahul Verma' (Employee Id SE26382338), click '+' and add photo 'employee_photo.png', then Save ==========
+INFO     orangehrm.DashboardPage:base_page.py:68 Click: Side menu 'PIM'
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Top navigation tab 'Add Employee'
+INFO     orangehrm.AddEmployeePage:base_page.py:73 Type: First Name = 'Rahul'
+INFO     orangehrm.AddEmployeePage:base_page.py:73 Type: Middle Name = 'Kumar'
+INFO     orangehrm.AddEmployeePage:base_page.py:73 Type: Last Name = 'Verma'
+INFO     orangehrm.AddEmployeePage:base_page.py:73 Type: Employee Id = 'SE26382338'
+INFO     orangehrm.AddEmployeePage:add_employee_page.py:70 Add profile picture: /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/test_data/images/employee_photo.png
+INFO     orangehrm.AddEmployeePage:base_page.py:68 Click: Add profile picture (+) button
+INFO     orangehrm.AddEmployeePage:add_employee_page.py:83 Profile picture added successfully: employee_photo.png
+INFO     orangehrm.AddEmployeePage:base_page.py:68 Click: Save button
+INFO     orangehrm.AddEmployeePage:base_page.py:128 Waiting for toast: Successfully Saved
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 2b. Verify saved details and the added profile photo ==========
+INFO     orangehrm.test.hybrid:test_employee_lifecycle_e2e.py:72 Profile photo added: employee_photo.png shown as 2500x2500 (file 2500x2500)
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 2c. Verify the new record is listed in PIM > Employee List ==========
+INFO     orangehrm.PersonalDetailsPage:base_page.py:68 Click: Top navigation tab 'Employee List'
+INFO     orangehrm.EmployeeListPage:base_page.py:73 Type: Employee Id (search) = 'SE26382338'
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Search button
+INFO     orangehrm.EmployeeListPage:employee_list_page.py:121 Verified table row: {'Id': 'SE26382338', 'First (& Middle) Name': 'Rahul Kumar', 'Last Name': 'Verma', 'Job Title': '', 'Employment Status': '', 'Sub Unit': '', 'Supervisor': '', 'Actions': ''}
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 3a. Search by Employee Id and open the record ==========
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Edit (pencil) icon of employee 'SE26382338'
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 3b. Edit profile photo -> upload 'profile_picture.png' ==========
+INFO     orangehrm.PersonalDetailsPage:base_page.py:68 Click: Employee avatar (opens Change Profile Picture)
+INFO     orangehrm.ChangeProfilePicturePage:change_profile_picture_page.py:39 Upload new profile photo: /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/test_data/images/profile_picture.png
+INFO     orangehrm.ChangeProfilePicturePage:base_page.py:68 Click: Change Profile Picture Save button
+INFO     orangehrm.ChangeProfilePicturePage:base_page.py:128 Waiting for toast: Successfully Updated|Successfully Saved
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 3c. Verify the new profile photo is shown on Personal Details ==========
+INFO     orangehrm.ChangeProfilePicturePage:base_page.py:68 Click: Employee profile tab 'Personal Details'
+INFO     orangehrm.test.hybrid:test_employee_lifecycle_e2e.py:104 Profile photo changed: 2500x2500 -> 200x200 (uploaded file is 200x200)
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 3d. Update Job Title='Account Assistant', Status='Full-Time Contract' ==========
+INFO     orangehrm.PersonalDetailsPage:base_page.py:68 Click: Employee profile tab 'Job'
+INFO     orangehrm.JobDetailsPage:base_page.py:80 Select: Job Title = 'Account Assistant'
+INFO     orangehrm.JobDetailsPage:base_page.py:80 Select: Employment Status = 'Full-Time Contract'
+INFO     orangehrm.JobDetailsPage:base_page.py:68 Click: Job Details Save button
+INFO     orangehrm.JobDetailsPage:base_page.py:128 Waiting for toast: Successfully Updated|Successfully Saved
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 3e. Reload and verify the values were persisted ==========
+INFO     orangehrm.JobDetailsPage:base_page.py:37 Reload page https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewJobDetails/empNumber/193
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 3f. Verify the updated values in the Employee List ==========
+INFO     orangehrm.JobDetailsPage:base_page.py:68 Click: Top navigation tab 'Employee List'
+INFO     orangehrm.EmployeeListPage:base_page.py:73 Type: Employee Id (search) = 'SE26382338'
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Search button
+INFO     orangehrm.EmployeeListPage:employee_list_page.py:121 Verified table row: {'Id': 'SE26382338', 'First (& Middle) Name': 'Rahul Kumar', 'Last Name': 'Verma', 'Job Title': 'Account Assistant', 'Employment Status': 'Full-Time Contract', 'Sub Unit': '', 'Supervisor': '', 'Actions': ''}
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 4a. Read the employee from the UI and check it against the test data ==========
+INFO     orangehrm.EmployeeListPage:employee_list_page.py:142 UI snapshot: EmployeeSnapshot(employee_id='SE26382338', first_name='Rahul', middle_name='Kumar', last_name='Verma', job_title='Account Assistant', employment_status='Full-Time Contract', emp_number=193)
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 4b. POST /api/users with the UI data -> 201 and same name/job ==========
+INFO     orangehrm.api.ReqRes:base_client.py:140 ReqRes -> POST https://reqres.in/api/users params=- body={"name": "Rahul Kumar Verma", "job": "Account Assistant"}
+INFO     orangehrm.api.ReqRes:base_client.py:175 ReqRes <- POST https://reqres.in/api/users -> 201 (198 ms) | body={"name":"Rahul Kumar Verma","job":"Account Assistant","id":"654","createdAt":"2026-09-18T12:05:27.077Z","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"This is a read-only demo endpoint. Sign up to create your own collections with full CRUD and auth.","cta":{"label":"Get started","url":"https://app.reqres.in/upgrade"},"context":"legacy_success"}}
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 4c. PUT /api/users/654 with the UI data -> 200 and same name/job ==========
+INFO     orangehrm.api.ReqRes:base_client.py:140 ReqRes -> PUT https://reqres.in/api/users/654 params=- body={"name": "Rahul Kumar Verma", "job": "Account Assistant - SE26382338"}
+INFO     orangehrm.api.ReqRes:base_client.py:175 ReqRes <- PUT https://reqres.in/api/users/654 -> 200 (179 ms) | body={"name":"Rahul Kumar Verma","job":"Account Assistant - SE26382338","updatedAt":"2026-09-18T12:05:30.253Z","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"This is a read-only demo endpoint. Sign up to create your own collections with full CRUD and auth.","cta":{"label":"Get started","url":"https://app.reqres.in/upgrade"},"context":"legacy_success"}}
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 4d. PATCH /api/users/654 with the Employment Status -> 200 ==========
+INFO     orangehrm.api.ReqRes:base_client.py:140 ReqRes -> PATCH https://reqres.in/api/users/654 params=- body={"job": "Full-Time Contract"}
+INFO     orangehrm.api.ReqRes:base_client.py:175 ReqRes <- PATCH https://reqres.in/api/users/654 -> 200 (106 ms) | body={"job":"Full-Time Contract","updatedAt":"2026-09-18T12:05:33.383Z","_meta":{"powered_by":"ReqRes","docs_url":"https://app.reqres.in/documentation","upgrade_url":"https://app.reqres.in/upgrade","example_url":"https://app.reqres.in/examples/notes-app","variant":"v1_b","message":"This is a read-only demo endpoint. Sign up to create your own collections with full CRUD and auth.","cta":{"label":"Get started","url":"https://app.reqres.in/upgrade"},"context":"legacy_success"}}
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 5a. Delete the employee from the UI ==========
+INFO     orangehrm.EmployeeListPage:base_page.py:73 Type: Employee Id (search) = 'SE26382338'
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Search button
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Delete (trash) icon of employee 'SE26382338'
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Yes, Delete button
+INFO     orangehrm.EmployeeListPage:base_page.py:128 Waiting for toast: Successfully Deleted
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 5b. Verify deletion in the UI (search returns 'No Records Found') ==========
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Top navigation tab 'Employee List'
+INFO     orangehrm.EmployeeListPage:base_page.py:73 Type: Employee Id (search) = 'SE26382338'
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Search button
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 5c. DELETE /api/users/654 -> 204 with empty body ==========
+INFO     orangehrm.api.ReqRes:base_client.py:140 ReqRes -> DELETE https://reqres.in/api/users/654 params=- body=-
+INFO     orangehrm.api.ReqRes:base_client.py:175 ReqRes <- DELETE https://reqres.in/api/users/654 -> 204 (98 ms) | body=<empty>
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 6a. Logout from the UI ==========
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: User profile dropdown
+INFO     orangehrm.EmployeeListPage:base_page.py:68 Click: Logout link
+INFO     orangehrm.step:reporting.py:19 ========== STEP: 6b. Verify the session is invalidated (protected page redirects to login) ==========
+INFO     orangehrm.LoginPage:login_page.py:56 Opening protected page /web/index.php/dashboard/index without a session
+INFO     orangehrm.conftest:conftest.py:209 UI screen recording saved: /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/videos/test_employee_lifecycle_ui_and_api_chromium-contract_software_engineer_no_login.webm

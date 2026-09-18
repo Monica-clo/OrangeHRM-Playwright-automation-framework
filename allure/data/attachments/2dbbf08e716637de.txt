@@ -1,6 +1,0 @@
-INFO     orangehrm.LoginPage:base_page.py:32 Navigate to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-INFO     orangehrm.LoginPage:base_page.py:73 Type: Username = 'Admin'
-INFO     orangehrm.LoginPage:base_page.py:73 Type: Password = ******
-INFO     orangehrm.LoginPage:base_page.py:68 Click: Login button
-INFO     orangehrm.conftest:conftest.py:190 Trace saved: /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/traces/test_update_personal_and_contact_details_chromium.zip (open with: playwright show-trace /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/traces/test_update_personal_and_contact_details_chromium.zip)
-INFO     orangehrm.conftest:conftest.py:209 UI screen recording saved: /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/videos/test_update_personal_and_contact_details_chromium.webm

@@ -1,0 +1,32 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "https://reqres.in/api/users/654",
+    "body": {
+      "name": "Rahul Kumar Verma",
+      "job": "Account Assistant - SE26382338"
+    }
+  },
+  "response": {
+    "status": 200,
+    "elapsed_ms": 179,
+    "body": {
+      "name": "Rahul Kumar Verma",
+      "job": "Account Assistant - SE26382338",
+      "updatedAt": "2026-09-18T12:05:30.253Z",
+      "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_b",
+        "message": "This is a read-only demo endpoint. Sign up to create your own collections with full CRUD and auth.",
+        "cta": {
+          "label": "Get started",
+          "url": "https://app.reqres.in/upgrade"
+        },
+        "context": "legacy_success"
+      }
+    }
+  }
+}
