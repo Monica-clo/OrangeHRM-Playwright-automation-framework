@@ -23,7 +23,7 @@
     "profile_picture": "test_data/images/employee_photo.png",
     "edit_profile_picture": "test_data/images/profile_picture.png",
     "create_login_details": false,
-    "job_title": "Software Engineer",
+    "job_title": "Account Assistant",
     "employment_status": "Full-Time Contract"
   }
 ]
