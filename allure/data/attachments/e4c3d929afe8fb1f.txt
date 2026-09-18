@@ -1,0 +1,15 @@
+INFO     orangehrm.conftest:conftest.py:231 Launching chromium
+INFO     orangehrm.screen_recorder:screen_recorder.py:74 Screen recording ON for 'test_add_employee_with_profile_photo[chromium-fulltime_qa_engineer_with_login]' -> /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/videos/test_add_employee_with_profile_photo_chromium-fulltime_qa_engineer_with_login.webm
+INFO     orangehrm.LoginPage:base_page.py:32 Navigate to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+INFO     orangehrm.LoginPage:base_page.py:73 Type: Username = 'Admin'
+INFO     orangehrm.LoginPage:base_page.py:73 Type: Password = ******
+INFO     orangehrm.LoginPage:base_page.py:68 Click: Login button
+INFO     orangehrm.conftest:conftest.py:190 Trace saved: /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/traces/test_add_employee_with_profile_photo_chromium-fulltime_qa_engineer_with_login.zip (open with: playwright show-trace /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/traces/test_add_employee_with_profile_photo_chromium-fulltime_qa_engineer_with_login.zip)
+INFO     orangehrm.conftest:conftest.py:209 UI screen recording saved: /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/videos/test_add_employee_with_profile_photo_chromium-fulltime_qa_engineer_with_login.webm
+INFO     orangehrm.screen_recorder:screen_recorder.py:74 Screen recording ON for 'test_add_employee_with_profile_photo[chromium-fulltime_qa_engineer_with_login]' -> /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/videos/test_add_employee_with_profile_photo_chromium-fulltime_qa_engineer_with_login.webm
+INFO     orangehrm.LoginPage:base_page.py:32 Navigate to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+INFO     orangehrm.LoginPage:base_page.py:73 Type: Username = 'Admin'
+INFO     orangehrm.LoginPage:base_page.py:73 Type: Password = ******
+INFO     orangehrm.LoginPage:base_page.py:68 Click: Login button
+INFO     orangehrm.conftest:conftest.py:190 Trace saved: /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/traces/test_add_employee_with_profile_photo_chromium-fulltime_qa_engineer_with_login.zip (open with: playwright show-trace /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/traces/test_add_employee_with_profile_photo_chromium-fulltime_qa_engineer_with_login.zip)
+INFO     orangehrm.conftest:conftest.py:209 UI screen recording saved: /home/runner/work/OrangeHRM-Playwright-automation-framework/OrangeHRM-Playwright-automation-framework/reports/videos/test_add_employee_with_profile_photo_chromium-fulltime_qa_engineer_with_login.webm
