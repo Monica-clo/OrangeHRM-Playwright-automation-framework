@@ -1,0 +1,31 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"WORKFLOW 2 - log in, create an employee in PIM (name, Employee Id, profile photo, login
+    details) and mirror the created record through POST /api/users.","19126","test_workflow_2_create_employee[firefox]","tests.e2e","2026-09-20","failed","2026-09-20","","test_employee_workflows","",""
+"WORKFLOW 3 - edit an employee: search by Employee Id, update the Personal Details and the
+    profile photo, prove both were persisted, then mirror the update with PUT /api/users/{id}.","37751","test_workflow_3_edit_employee[firefox]","tests.e2e","2026-09-20","failed","2026-09-20","","test_employee_workflows","",""
+"WORKFLOW 3 - edit an employee: search by Employee Id, update the Personal Details and the
+    profile photo, prove both were persisted, then mirror the update with PUT /api/users/{id}.","34111","test_workflow_3_edit_employee[chromium]","tests.e2e","2026-09-20","failed","2026-09-20","","test_employee_workflows","",""
+"WORKFLOW 4 - add one more set of details to the same employee: the Contact Details tab
+    (address, telephone, email), verified after a reload and mirrored with PATCH /api/users/{id}.","24764","test_workflow_4_add_contact_details[chromium]","tests.e2e","2026-09-20","failed","2026-09-20","","test_employee_workflows","",""
+"WORKFLOW 4 - add one more set of details to the same employee: the Contact Details tab
+    (address, telephone, email), verified after a reload and mirrored with PATCH /api/users/{id}.","28115","test_workflow_4_add_contact_details[firefox]","tests.e2e","2026-09-20","failed","2026-09-20","","test_employee_workflows","",""
+"WORKFLOW 1 (negative) - authentication must be REJECTED, on the UI and on the API.
+
+    UI : a valid user name with a wrong password shows 'Invalid credentials', keeps the user on
+         the login page and creates no session (a protected URL still redirects to login).
+    API: POST /api/login without a password -> 400 with the exact error text and no token.
+    ","10777","test_workflow_1_negative_rejected_authentication[firefox]","tests.e2e","2026-09-20","passed","2026-09-20","","test_employee_workflows","",""
+"WORKFLOW 5 - close the lifecycle: set Job Title and Employment Status, cross-check the
+    Employee List columns, delete the employee in the UI, confirm the deletion through
+    DELETE /api/users/{id} -> 204, and log out.","35149","test_workflow_5_job_details_delete_and_logout[firefox]","tests.e2e","2026-09-20","failed","2026-09-20","","test_employee_workflows","",""
+"WORKFLOW 2 - log in, create an employee in PIM (name, Employee Id, profile photo, login
+    details) and mirror the created record through POST /api/users.","17648","test_workflow_2_create_employee[chromium]","tests.e2e","2026-09-20","failed","2026-09-20","","test_employee_workflows","",""
+"WORKFLOW 1 (negative) - authentication must be REJECTED, on the UI and on the API.
+
+    UI : a valid user name with a wrong password shows 'Invalid credentials', keeps the user on
+         the login page and creates no session (a protected URL still redirects to login).
+    API: POST /api/login without a password -> 400 with the exact error text and no token.
+    ","7228","test_workflow_1_negative_rejected_authentication[chromium]","tests.e2e","2026-09-20","passed","2026-09-20","","test_employee_workflows","",""
+"WORKFLOW 5 - close the lifecycle: set Job Title and Employment Status, cross-check the
+    Employee List columns, delete the employee in the UI, confirm the deletion through
+    DELETE /api/users/{id} -> 204, and log out.","31696","test_workflow_5_job_details_delete_and_logout[chromium]","tests.e2e","2026-09-20","failed","2026-09-20","","test_employee_workflows","",""
